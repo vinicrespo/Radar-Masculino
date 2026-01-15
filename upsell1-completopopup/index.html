@@ -151,17 +151,14 @@
                 <p class="text-xs text-gray-500 mb-8 italic">Oferta exclusiva para quienes acaban de activar su Radar
                 </p>
 
-                <!-- Main CTA -->
-                <a href="#" id="cta-upsell-aceitar"
-                    class="block w-full bg-wine text-white font-bold py-4 rounded-lg shadow-lg hover:bg-wineLight transition-all transform hover:-translate-y-1 mb-4 uppercase tracking-wide text-sm">
-                    QUIERO LA BIBLIA COMPLETA →
-                </a>
+                <!-- HOTMART - Sales Funnel Widget -->
+                <div id="hotmart-sales-funnel"></div>
 
-                <!-- Refuse CTA -->
-                <a href="#" id="cta-upsell-recusar"
-                    class="inline-block text-xs text-gray-400 underline hover:text-gray-600 transition-colors mb-6">
-                    No gracias, continuar sin la guía
-                </a>
+                <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+                <script>
+                    checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+                </script>
+                <!-- HOTMART - Sales Funnel Widget -->
 
                 <!-- Guarantee -->
                 <div

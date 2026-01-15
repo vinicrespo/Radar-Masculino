@@ -57,20 +57,17 @@
         <!-- BLOCO 2: CTA + RECUSA -->
         <section class="px-6 pb-12 text-center">
 
-            <!-- Main CTA -->
-            <a href="#" id="cta-downsell-aceitar"
-                class="block w-full bg-gold text-white font-bold py-4 rounded-lg shadow-gold hover:bg-[#B08D55] transition-all transform hover:-translate-y-1 mb-6 uppercase tracking-wide text-sm animate-pulse-slow">
-                SÍ, QUIERO LA BIBLIA POR $5.90 →
-            </a>
+            <!-- HOTMART - Sales Funnel Widget -->
+            <div id="hotmart-sales-funnel"></div>
 
-            <!-- Refuse CTA -->
-            <a href="#" id="cta-downsell-recusar"
-                class="inline-block text-xs text-gray-500 underline hover:text-gray-300 transition-colors mb-8">
-                No gracias, seguir sin la guía
-            </a>
+            <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+            <script>
+                checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+            </script>
+            <!-- HOTMART - Sales Funnel Widget -->
 
             <!-- Guarantee -->
-            <div class="flex items-center justify-center gap-2 text-[10px] text-gray-600">
+            <div class="flex items-center justify-center gap-2 text-[10px] text-gray-600 mt-6">
                 <i class="fas fa-lock text-gold"></i>
                 <span>7 días de garantía</span>
             </div>
